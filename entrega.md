@@ -1,64 +1,31 @@
-\# Entrega — Aula 01: Fundamentos de Git e Docker
+# Entrega — Prova do Primeiro Bimestre (DevOps)
 
+**Aluno:** Caio Akiyama Shimabuku
+**RA:** 6325124
+**Data:** 01/10/2026
+**Ferramenta de IA utilizada:** Claude
 
+## Repositório do Projeto
 
-\*\*Aluno:\*\* Pablo Augusto Ramos Sobral  
+- URL: https://github.com/KeiouShim/prova-primeiro-bimestre-devops.git
 
-\*\*RA:\*\* 6325076  
+## Checklist de Evidências
 
-\*\*Data:\*\* 18/09/2026
+- [x] Repositório público com README (nome + RA) e .gitignore 
+- [x] Mínimo de 6 commits com Conventional Commits + feature branch
+- [x] API com **CRUD completo** de reservas (POST, GET, GET/:id, PUT, DELETE) + /health
+- [ ] Rotas de CRUD gravando no **banco PostgreSQL** (não em memória)
+- [x] Dockerfile funcional da API de Reservas
+- [x] docker-compose.yml (API + PostgreSQL) subindo com um comando
+- [ ] Terraform modularizado (vpc, security-group, ec2, rds)
+- [x] **RDS PostgreSQL provisionado** nas subnets privadas (banco da API na nuvem)
+- [x] Remote State configurado (S3 + DynamoDB)
+- [x] Uso de LabRole/LabInstanceProfile (sem criar IAM próprio)
+- [ ] terraform validate e terraform plan sem erros
+- [x] relatorio.md completo (4 questões)
+- [ ] terraform destroy executado após evidências
 
-
-
-\## Repositório
-
-
-
-\- URL: https://github.com/Pablao02/unifaat-devops-portfolio
-
-
-
-\## Evidências
-
-
-
-\- \[x] Repositório público com estrutura completa
-
-\- \[x] Mínimo de 5 commits demonstrando workflow Git
-
-\- \[x] Dockerfile funcional
-
-\- \[x] Container rodando
-
-
-
-\## Evidência de Container Rodando
-
-
-
-```text
-
-CONTAINER ID   IMAGE                  STATUS         PORTS                                         NAMES
-
-8ec0dbd4d956   portfolio-aula01:1.0   Up             0.0.0.0:3000->3000/tcp, \[::]:3000->3000/tcp   portfolio-test
-
-
-
-\### Teste da API
-
-
-
-```text
-
-GET http://localhost:3000
-
-
-
-{"servico":"DevOps Portfolio API","aluno":"Pablo Augusto Ramos Sobral","ra":"6325076","aula":"01 - Fundamentos de Git e Docker","status":"online"}
-
-
-
-GET http://localhost:3000/health
+(Marque apenas o que você realmente executou e comprovou.)
 
 
 
